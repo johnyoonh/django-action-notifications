@@ -24,3 +24,4 @@ class ActionNotificationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.ActionNotification
+        fields = '__all__'

@@ -11,7 +11,7 @@ class ActionNotificationPagination(pagination.CursorPagination):
     page_size = 10
 
 class ActionNotificationFilterSet(django_filters.FilterSet):
-    app_label = django_filters.MethodFilter(action='filter_app_label')
+    app_label = django_filters.Filter(method='filter_app_label')
 
     class Meta:
         model = models.ActionNotification
